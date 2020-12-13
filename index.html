@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>读书</title>
+	<link rel="stylesheet" type="text/css" href="work.css">
+</head>
+<body bgcolor="#e9edf0">
+	<div class="header">
+		<div class="container">
+			<div class="header-top">
+            	<div class="container clear">
+                	<ul class="header-info clear">
+                    	<li><a href=" " onclick="onload1()">登录/注册</a></li>
+                    	<li class="iphone"><a href=" ">移动客户端</a></li>
+                    	<li class="weixin"><a href=" ">微信</a></li>
+                	</ul>
+            	</div>
+        	</div>
+			<div class="header-bottom clear">
+				<img  class="logo" src="images/logo-1.png" alt=" " height="110px" width="200px">
+				<ul class="nav clear">
+					<li id="first"><a href=" ">首页</a></li>
+					<li><a href=" ">在线阅读</a></li>
+					<li><a href=" " onclick="buyBooks()">购买书籍</a></li>
+					<li><a href=" ">旧书置换</a></li>
+				</ul>
+				<div class="sousuo clear">
+					<form class="form">
+					<input type="text" placeholder="&nbsp;&nbsp;&nbsp;输入关键词" class="search">
+					<input type="button" class="submit" value="搜索" style="color:white;">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="box" id="box">
+		<div class="slider" id="slider">		
+			<div class="slide"><img src="images/banner.jpg" width="1200px" height="397px" alt=""></div>
+			<div class="slide"><img src="images/banner2.jpg" width="1200px" height="397px" alt=""></div>
+			<div class="slide"><img src="images/banner3.jpg" width="1200px" height="397px" alt=""></div>
+			<div class="slide"><img src="images/banner.jpg" width="1200px" height="397px" alt=""></div>
+			<div class="slide"><img src="images/banner1.jpg" width="1200px" height="397px" alt=""></div>
+		</div>
+		<span id="left"><</span>
+		<span id="right">></span>
+		<ul class="nav1" id="nav1">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<div class="container clear">
+		<div class="fenlei">
+			<ul class="nav2 clear">
+				<li class="first"><a href=" " class="link2">好书推荐</a></li>
+				<li><a href=" " class="link2">重温经典</a></li>
+				<li><a href=" " class="link2">中国古代</a></li>
+				<li><a href=" " class="link2">中国现代</a></li>
+				<li><a href=" " class="link2">译本精选</a></li>
+				<li><a href=" " class="link2">英文原著</a></li>
+				<li><a href=" " class="link2 " id="last">其他</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="middle">
+		<div class="container2">
+		<div class="pic first clear">
+			<img class="pclass" src="./images/1.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《围城》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;沈从文</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass" src="./images/2.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《文学回忆录》（全2册）</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;木心 口述 / 陈丹青 笔录</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass" src="./images/3.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《中国历代政治得失》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;钱穆</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass" src="./images/4.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《送你一颗子弹》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;刘瑜</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass" src="./images/5.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《论美国的民主》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;【法】托克维尔</p>
+			</div>
+		</div>
+				<div class="pic first clear">
+			<img class="pclass line2" src="./images/6.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《月亮和六便士》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;【英】毛姆</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass line2" src="./images/7.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《霍乱时期的爱情》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;【哥伦比亚】加西亚·马尔克斯</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass line2" src="./images/8.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《影响力》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[美] 罗伯特·西奥迪尼</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass line2" src="./images/9.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《小王子》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[法] 圣埃克苏佩里</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass" src="./images/10.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《社会心理学》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[美] 戴维·迈尔斯</p>
+			</div>
+		</div>
+	</div>
+</div>
+		<div class="container3 clear">
+			<a class="douban" href=" ">书单Top5</a>
+			<a  class="chakan" href=" ">查看全部</a>
+		</div>
+		<div class="pic3">
+			<div class="pic first clear">
+			<img class="pclass" src="./images/11.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《如何阅读一本书》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[美] 莫提默·J. 艾德勒 / 查尔斯·范多伦</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass" src="./images/12.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《少有人走的路》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[美] M·斯科特·派克</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass" src="./images/13.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《乌合之众》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;（法）勒庞</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass" src="./images/14.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《追风筝的人》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[美] 卡勒德·胡赛尼</p>
+			</div>
+		</div>
+				<div class="pic clear">
+			<img class="pclass" src="./images/15.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《万历十五年》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[美] 黄仁宇</p>
+			</div>
+			</div>
+			<div class="banner2 clear">
+				<img  class="pdushi" src="images/16.jpg" width="500px" height="700px">
+				<p class="dushuri">世界读书日全称为世界图书与版权日，又称"世界图书日"，最初的创意来自于国际出版商协会。1995年正式确定每年4月23日为"世界图书与版权日"，设立目的是推动更多的人去阅读和写作，希望所有人都能尊重和感谢为人类文明做出过巨大贡献的文学、文化、科学、思想大师们，保护知识产权。每年的这一天，世界100多个国家都会举办各种各样的庆祝和图书宣传活动 。1995年，国际出版商协会在第二十五届全球大会上提出"世界图书日"的设想，并由西班牙政府将方案提交联合国教科文组织。后来，俄罗斯认为，"世界图书日"还应当增加版权的概念。设立世界读书日的建议是由西班牙提出的，其灵感源自西班牙加泰罗尼亚地区的"圣乔治节"。
+					另据《图书馆杂志》，世界读书日来源于西班牙加泰罗尼亚地区的一个传说：美丽的公主被恶龙困于深山，勇士乔治只身战胜恶龙，解救了公主；公主回赠给乔治的礼物是一本书。从此书成为胆识和力量的象征。4月23日成为"圣乔治节"。节日期间，加泰罗尼亚地区的居民有赠送玫瑰和图书给亲友的习俗.联合国教科文组织选择4月23日成为世界读书日的灵感来自于一个美丽的传说。4月23日是西班牙文豪塞万提斯的忌日，也是加泰罗尼亚地区大众节日"圣乔治节"。
+					实际上，同一天也是莎士比亚出生和去世的纪念日，又是美国作家纳博科夫、法国作家莫里斯·德吕翁、冰岛诺贝尔文学奖得主拉克斯内斯等多位文学家的生日，所以这一天成为全球性图书日看来"名正言顺"。联合国教科文组织在1972年向全世界发出"走向阅读社会"的召唤，要求社会成员人人读书，图书成为生活的必需品，读书成为每个人日常生活不可或缺的一部分。1995年，联合国教科文组织宣布4月23日为"世界读书日"，致力于向全世界推广阅读、出版和对知识产权的保护。
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="bottom">
+		<div class="container4">
+			<div class="zi">
+			<p class="logo-b1">读书</p>
+			<p class="logo-b2">The more konwledge the more intoxicated.</p>
+		</div>
+		<div class="liebiao">
+			<ul class="link1">
+				<li><a href=" " class="fir">关于我们</a></li>
+				<li><a href=" ">联系我们</a></li>
+				<li><a href=" ">常见问题</a></li>
+				<li><a href=" ">意见反馈</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="container5">
+			<p>© 2015-2020 读书 XXXXX有限公司版权所有 冀ICP备12XXXXX号-4</p>
+		</div>
+	</div>
+	<script>
+		function getStyle(obj, attr){
+	        if(obj.currentStyle){
+		    	return obj.currentStyle[attr];
+			}else {
+			return getComputedStyle(obj, null)[attr];
+			}
+		}
+		function animate(obj,json,callback){
+			clearInterval(obj.timer);
+			obj.timer = setInterval(function(){
+				var isStop = true;
+				for(var attr in json){
+					var now = 0;
+					if(attr == 'opacity'){
+						now = parseInt(getStyle(obj,attr)*100);
+					}else{
+						now = parseInt(getStyle(obj,attr));
+					}
+					var speed = (json[attr] - now) / 8;
+					speed = speed>0?Math.ceil(speed):Math.floor(speed);
+					var cur = now + speed;
+					if(attr == 'opacity'){
+						obj.style[attr] = cur / 100;
+					}else{
+						obj.style[attr] = cur + 'px';
+					}
+					if(json[attr] !== cur){
+						isStop = false;
+					}
+				}
+				if(isStop){
+					clearInterval(obj.timer);
+					callback&&callback();
+				}
+			}, 30)
+		}
+		var box = document.getElementById('box');
+		var oNavlist = document.getElementById('nav1').children;
+		var slider = document.getElementById('slider');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var index = 1;
+		var timer;
+		var isMoving = false;
+		box.onmouseover = function(){
+			animate(left,{opacity:50})
+			animate(right,{opacity:50})
+			clearInterval(timer)
+		}
+		box.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 3000);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].index = i;
+			oNavlist[i].onclick = function(){
+				index = this.index+1;
+				navmove();
+				animate(slider,{left:-1200*index});
+			}
+		}
+		function next(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index++;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==6){
+					slider.style.left = '-1200px';
+					index = 1;
+				}
+				isMoving = false;
+			});
+		}
+		function prev(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index--;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==0){
+					slider.style.left = '-6000px';
+					index = 5;
+				}
+				isMoving = false;
+			});
+		}
+		function navmove(){
+			for( var i=0; i<oNavlist.length; i++ ){
+				oNavlist[i].className = "";
+			}
+			if(index >5 ){
+				oNavlist[0].className = "active";
+			}else if(index<=0){
+				oNavlist[4].className = "active";
+			}else {
+				oNavlist[index-1].className = "active";
+			}
+		}
+		timer = setInterval(next, 3000);
+		function onload1(){
+			window.open("another.html")
+		}
+		function buyBooks(){
+			var buy=confirm("将跳转至购买页面")
+			if(buy==true){
+				window.open("another2.html");
+			}
+		}
+	</script>
+</body>
+</html>

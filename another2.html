@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购买</title>
+</head>
+	<style>
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	a {
+		text-decoration: none;
+	}
+	ul {
+		list-style-type: none;
+	}
+	.clear:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+	}
+	#container1 {
+		width: 1000px;
+		margin: 0 auto;
+	}
+	#buy {
+		color: rgba(12,80,148,1);
+		margin-left: 15px;
+	}
+	.pic {
+		display: inline-block;
+		width: 228px;
+	}
+	.pclass {
+		display: inline-block;
+		float: left;
+		width: 228px;
+		height: 300px;
+	}
+	.class1 {
+		float: left;
+		width: 228px;
+		height: 100px;
+		background-color: white;
+	}
+	.pic {
+		float: left;
+		margin-left: 15px;
+		margin-top: 30px;
+	}
+	.pic2 {
+		margin-top: 15px;
+	}
+	.pic.first {
+		margin-left: 0;
+	}
+	.jieshao {
+		display: inline-block;
+		width: 228px;
+		padding-top: 23px;
+		text-align: center;
+		font-size:15px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(5,5,5,1);
+		line-height:20px;
+	}
+	.xuexi {
+		padding-top: 18px;
+		font-size:12px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(153, 153, 153, 1);
+		text-align: center;
+	}
+	.zuozhe {
+		color:rgba(12,80,148,1);
+	}
+	.dot {
+		font-weight: bold;
+	}
+	.buyBook {
+		margin-top: 5px;
+		margin-left: 79px;
+		color: white;
+		background-color: rgba(12,80,148,1);
+		width: 70px;
+		height: 30px;
+	}
+	</style>
+<body>
+	<div id="container1">
+		<h1 id="buy">购买书籍</h1>
+		<br />
+		<hr / style="color:rgba(12,80,148,1)">
+		<div class="pic clear">
+			<img class="pclass" src="./images/1.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《围城》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;沈从文</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass" src="./images/2.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《文学回忆录》（全2册）</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;木心 口述 / 陈丹青 笔录</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass" src="./images/3.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《中国历代政治得失》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;钱穆</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass" src="./images/4.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《送你一颗子弹》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;刘瑜</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass" src="./images/5.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《论美国的民主》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;【法】托克维尔</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass line2" src="./images/6.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《月亮和六便士》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;【英】毛姆</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass line2" src="./images/7.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《霍乱时期的爱情》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;【哥伦比亚】加西亚·马尔克斯</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass line2" src="./images/8.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《影响力》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[美] 罗伯特·西奥迪尼</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass line2" src="./images/9.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《小王子》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[法] 圣埃克苏佩里</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass" src="./images/10.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《社会心理学》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[美] 戴维·迈尔斯</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass" src="./images/11.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《如何阅读一本书》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[美] 莫提默·J. 艾德勒 </p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+		<div class="pic clear">
+			<img class="pclass" src="./images/12.jpg">
+			<div class="class1">
+				<a href=" " class="jieshao">《少有人走的路》</a>
+				<p class="xuexi"><span class="zuozhe">作者</span>&nbsp;<span class="dot">：</span>&nbsp;[美] M·斯科特·派克</p>
+				<input type="button" value="立即购买" class="buyBook clear" onclick="buy1()">
+			</div>
+		</div>
+	</div>
+</body>
+	<script>
+		function buy1(){
+			var buy=confirm("确认购买？")
+			if(buy==true){
+				alert("请付款");
+			}
+		}
+	</script>
+</html>

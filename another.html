@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录/注册</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.clear:after {
+			content: "";
+			display: block;
+			height: 0;
+			clear: both;
+		}
+		.container {
+			width: 800px;
+			margin:0 auto;
+			margin-top: 100px;
+			margin-left: 600px;
+		}
+		.container1 {
+			display: inline-block;
+			width: 300px;
+			float: left;
+		}
+		.input1 input {
+			border-color: white;
+			float: right;
+			height: 30px;
+			margin-right: 50px;
+			border: none;
+			outline-color: invert ;
+			outline-style: none ;
+			outline-width: 0px ;
+			margin-top: 5px;
+		}
+		.input1 {
+			display: block;
+			height:40px;
+			width: 300px;
+			border: 1px solid gray;
+			margin: 0 auto;
+		}
+		.word {
+			line-height: 40px;
+			font-size: 12px;
+		}
+		.input2 button {
+			height: 40px;
+			width: 300px;
+			background-color: rgba(12,80,148,1);
+			color: white;
+			border: none;
+		}
+		.input2 {
+			display: block;
+			width: 300px;
+			margin: auto;
+		}
+		#tip1 {
+			height: 25px;
+			font-size: 10px;
+			color: gray;
+			line-height: 25px;
+		}
+		#tip2 {
+			height: 25px;
+			font-size: 10px;
+			color: gray;
+			line-height: 25px;
+		}
+		.enroll {
+			display: inline-block;
+			float:left;
+			margin-left: 100px;
+		}
+		#tipClick1 {
+			height: 50px;
+			line-height: 50px;
+			color: rgba(12,80,148,1);
+		}
+		#tipClick2 {
+			height: 50px;
+			line-height: 50px;
+			color: rgba(12,80,148,1);
+		}
+		#tipClick3 {
+			height: 50px;
+			line-height: 50px;
+			color: rgba(12,80,148,1);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="container1 clear">
+			<div class="input1 clear">
+				<span class="word">&nbsp;&nbsp;用&nbsp;户&nbsp;名</span>
+				<input type="text" name="name" id="name2" onfocus="getfocus1()" onblur="outfocus1()">
+			</div>
+			<p id="tip1">&nbsp;</p>
+			<div class="input1 clear">
+				<span class="word">&nbsp;&nbsp;设置密码</span>
+				<input type="password" name="password1" id="password2" onfocus="getfocus2()" onblur="outfocus2()">
+			</div>
+			<p id="tip2">&nbsp;</p>
+			<div class="input2">
+				<button type="submit" id="submit1" onclick="submit()">立即注册</button>
+			</div>
+		</div>
+		<div class="enroll clear">
+			<p id="tipClick1">&nbsp;</p>
+			<p id="tipClick2">&nbsp;</p>
+			<p id="tipClick3">&nbsp;</p>
+		</div>
+	</div>
+</body>
+<script>
+		function getfocus1() {
+			document.getElementById("tip1").innerHTML="支持中文数字";
+		}
+		function outfocus1() {
+			var name3 = document.getElementById("name2");	
+			if(name3.value!="") {
+				document.getElementById("tip1").innerHTML="&nbsp;";
+			}
+			else{
+				document.getElementById("tip1").innerHTML="用户名不能为空";;
+			}
+		}
+		function getfocus2() {
+			document.getElementById("tip2").innerHTML="建议至少使用两种字符组合";
+		}
+		function outfocus2() {
+			var name4 = document.getElementById("password2");	
+			if(name4.value!=""){
+				document.getElementById("tip2").innerHTML="&nbsp;";
+			}
+			else{
+				document.getElementById("tip2").innerHTML="密码不能为空";;
+			}
+		}
+		function submit(){
+			if(document.getElementById("name2").value!="" && document.getElementById("password2").value!=""){
+				var tips1=document.getElementById("tipClick1");
+				tips1.innerHTML="注册成功！";
+				var tips2=document.getElementById("tipClick2");				
+				var name5=document.getElementById("name2").value;				
+				tips2.innerHTML="用户名："+name5;
+				var tips3=document.getElementById("tipClick3");
+				var password3=document.getElementById("password2").value;
+				tips3.innerHTML="密码："+password3;
+			}
+		}
+	</script>
+</html>
